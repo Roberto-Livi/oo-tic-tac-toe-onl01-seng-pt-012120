@@ -18,6 +18,10 @@ class TicTacToe
     @board[index]!=" "
   end
   
+  def valid_move?(token)
+    !position_taken && token.between?(0..8)
+  end
+  
   
   def display_board
   puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
