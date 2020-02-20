@@ -19,7 +19,7 @@ class TicTacToe
   end
   
   def valid_move?(token)
-    !position_taken(token) && token.between?(0, 8)
+    !position_taken?(token) && token.between?(0, 8)
   end
   
   
